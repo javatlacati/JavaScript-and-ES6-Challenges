@@ -9,6 +9,12 @@ Use ES6 whenever possible.
 "use strict";
 
 // Write code here
+let sum = (...elems) => {
+    let total = elems.reduce(sum_pairs, 0)
+    console.log(total);
+    return total;
+};
+let sum_pairs = (num1, num2) => num1 + num2;
 
 sum(1, 3);
 //4
